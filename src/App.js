@@ -9,7 +9,11 @@ function App() {
   return (
     <div className="App">
       <header>Hadi's Todo List</header>
-      <Form setInputText={setInputText} />
+      <Form 
+      todos={todos} 
+      inputText={inputText}
+      setTodos={setTodos}
+      setInputText={setInputText} />
       <TodoList />
     </div>
   );
